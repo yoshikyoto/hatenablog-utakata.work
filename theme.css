@@ -1,5 +1,49 @@
 @charset "utf-8";
 
+/* タイトル下のメニューのデザイン */
+#top-editarea {
+  padding: 0px;
+  text-align: center;
+}
+
+.header-nav {
+  background-color: #aaa;
+  width: 100%;
+}
+
+.header-menu li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.header-menu li:hover {
+  background-color: #ddd;
+  color: #1487bd;
+}
+
+.header-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-menu a:visited {
+  color: #fff;
+}
+
+/* 各アーカイブページのヘッダは不要なので消してしまう
+ * パンくずリストでわかるし、コンテンツが下に下がるのは良くない */
+.archive-header-category {
+  display: none;
+}
+
+  /*
+    ここから下ははてなブログのテーマをそのまま
+    Theme: thumbnail
+    Author: rokuzeudon
+    Description:
+    一覧ページでサムネイル画像が際立つテーマです
+    Responsive: yes
+   */
 
 #box2-inner, svg:not(:root) {
     overflow: hidden
@@ -363,7 +407,7 @@ a.keyword {
     border-bottom: 1px solid #eee
 }
 
-#top-editarea, .breadcrumb {
+.breadcrumb {
     max-width: 80em;
     margin: auto;
     padding: 1em;
