@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* タイトル部分のデザイン */
+/* タイトルと説明の間を開ける */
+h2#blog-description {
+  margin-top: 20px;
+}
+
 /* タイトル下のメニューのデザイン */
 #top-editarea {
   padding: 0px;
@@ -9,6 +15,10 @@
 .header-nav {
   background-color: #aaa;
   width: 100%;
+}
+
+.header-menu {
+  margin: 0px;
 }
 
 .header-menu li {
@@ -23,6 +33,7 @@
 
 .header-menu a {
   color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -30,10 +41,10 @@
   color: #fff;
 }
 
-/* 各アーカイブページのヘッダは不要なので消してしまう
- * パンくずリストでわかるし、コンテンツが下に下がるのは良くない */
-.archive-header-category {
-  display: none;
+/* 右にあるHTMLモジュールだけタイトルがずれるので調整する */
+.hatena-module-html .hatena-module-title {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
   /*
@@ -979,14 +990,6 @@ a.keyword {
     margin: 2em 0;
     font-size: 1.5em;
     text-align: center
-}
-
-.page-archive .archive-heading::before {
-    content: "ARCHIVE";
-    display: block;
-    margin: 0 0 .4em;
-    color: #ccc;
-    font-size: .6em
 }
 
 .page-archive .archive-entries {
