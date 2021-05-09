@@ -1,9 +1,19 @@
 @charset "utf-8";
 
 /* タイトル部分のデザイン */
+/* タイトルのフォントを変更 */
+@font-face {
+  font-family: 'Cica';
+  src: url('https://font.utakata.app/Cica-Bold.ttf') format('truetype');
+}
+h1#title {
+  font-family: 'Cica', Impact;
+  font-size: 2.4em;
+}
 /* タイトルと説明の間を開ける */
 h2#blog-description {
   margin-top: 20px;
+  font-size: 0.8em;
 }
 
 /* タイトル下のメニューのデザイン */
